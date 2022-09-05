@@ -1,0 +1,139 @@
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px 0px 0px 0px;
+    background: rgb(245, 245, 245);
+    /**To-Do place this in media query
+    grid-template-areas:
+    "nav-bar main-doc main-doc"
+    "nav-bar main-doc main-doc"
+    "nav-bar main-doc main-doc";
+    **/
+}
+/***
+Nav-bar
+**/
+.navbar{
+    display: flex;
+    flex-direction: column;
+    /*To-do position: */    
+    margin: 0px 0px;
+}
+.nav-header{
+    height: 200px;
+    margin: 0px 0px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border: 2px solid black;
+    list-style: none;
+}
+.navbar header{
+    display: flex;
+    justify-content: center;
+    padding: 15px 15px;
+    font-size: 30px;
+}
+.nav-link{
+    display: flex;
+    justify-content: start;
+    border-bottom: 1px solid black;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: black;
+    color: rgb(107, 117, 126);
+}
+/***
+ends here.
+**/
+
+/***
+main-document
+**/
+.main-doc{
+    display: flex;
+    flex-direction: column;
+}
+.main-section header{
+    font-size: 30px;
+    margin: 20px 20px;
+}
+.main-section p{
+    margin: 10px 40px;
+    color: rgb(107, 117, 126);
+    line-height: 22px;
+    text-align: justify;
+}
+.main-section ul li{
+    margin: 10px 50px;
+    color: rgb(107, 117, 126);
+    text-align: justify;
+    line-height: 22px;
+}
+.main-section .code-body{
+    background-color: rgb(225, 226, 228);
+    margin: 10px 55px;
+    padding: 15px 15px;
+}
+/***
+ends here.
+**/
+@media screen and (min-width: 800px){
+    body{
+        flex-direction: row;
+    }
+    .navbar{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 280px;
+        border: 2px solid black;
+    }
+    .navbar header{
+        border-bottom: 1px solid black;
+    }
+    .nav-header{
+        height: 100%;
+        width: 280px;
+        border: none;
+    }
+    .nav-link{
+        padding: 15px 15px;
+    }
+    .navbar header{
+        margin: 0px 0px;
+    }
+    .main-doc{
+        flex-direction: column;
+        margin: 15px 0px 0px 300px;
+    }
+}
+@media screen and (min-width: 1000px){
+    body{
+        flex-direction: row;
+    }
+    .navbar{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 280px;
+        border: 2px solid black;
+    }
+    .nav-header{
+        height: 100%;
+        width: 280px;
+        border: none;
+    }
+    .nav-link{
+        padding: 15px 15px;
+    }
+    .navbar header{
+        margin: 0px 0px;
+    }
+    .main-doc{
+        flex-direction: column;
+        margin: 15px 0px 0px 300px;
+    }
+}
